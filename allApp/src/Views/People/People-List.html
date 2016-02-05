@@ -1,0 +1,19 @@
+<ion-view view-title="People">
+
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button icon ion-navicon phone-both-tablet-portrait"></button>
+    </ion-nav-buttons>
+
+    <ion-content class="has-header">
+        <ion-list>
+
+            <ion-item ng-repeat="people in viewModel.peoples" class="item-icon-left item-icon-right">
+                <i class="icon ion-person"></i>
+                <i class="icon ion-ios-arrow-forward"></i>
+                {{people.name}}
+            </ion-item>
+
+        </ion-list>
+    </ion-content>
+
+</ion-view>
